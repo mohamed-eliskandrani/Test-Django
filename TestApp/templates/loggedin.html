@@ -1,0 +1,10 @@
+<body>
+    {% block content %}
+    <form method = "post">
+        {% csrf_token %}
+    <p style="text-align:left;"> Welcome {{current_user}} </p>
+    <input type = "submit" name = "Logout" value="Logout">
+    <input type = "submit" name = "Delete" value="Delete">
+    </form>
+    {% endblock %}
+</body>
